@@ -5,12 +5,13 @@ name = input("What is your name?\n>> ")
 
 print("Hi " + name)
 
-print ("I'm Rick Harrison and this meme died months ago")
-
-
-print("Hello person that is alive")
-name = input("What is your name?\n>> ")
-print("Hi " + name)
-
-
-input("what is your age?")
+def askage():
+  age = int(input("what is your age? "))
+  if age < 60:
+    print("How was college? ")
+  elif age > 60:
+    print("You're old")
+  else:
+    print("That's interesting.")
+  
+askage()  
